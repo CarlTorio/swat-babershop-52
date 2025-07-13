@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -21,6 +22,10 @@ const Header = () => {
     href: '#contact'
   }];
 
+  const handleLogoClick = () => {
+    window.location.href = '/';
+  };
+
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md border-b border-barbershop-gold/20">
@@ -28,7 +33,12 @@ const Header = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <img src="/lovable-uploads/653fef1c-76ed-485f-b238-a70f78bad3e8.png" alt="SWAT BARBER SHOP" className="h-12" />
+              <img 
+                src="/lovable-uploads/653fef1c-76ed-485f-b238-a70f78bad3e8.png" 
+                alt="SWAT BARBER SHOP" 
+                className="h-12 cursor-pointer hover:opacity-80 transition-opacity duration-200" 
+                onClick={handleLogoClick}
+              />
             </div>
 
             {/* Desktop Navigation */}
