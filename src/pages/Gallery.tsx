@@ -60,32 +60,32 @@ const Gallery = () => {
             </div>
 
             {/* Before & After Images */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-8 mb-8">
               {/* Before */}
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-barbershop-gold text-center">BEFORE</h3>
+              <div className="space-y-2 md:space-y-4">
+                <h3 className="text-lg md:text-xl font-semibold text-barbershop-gold text-center">BEFORE</h3>
                 <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
                   <img
                     src={currentPhoto.before}
                     alt="Before haircut"
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute top-2 md:top-4 left-2 md:left-4 bg-red-600 text-white px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-semibold">
                     BEFORE
                   </div>
                 </div>
               </div>
 
               {/* After */}
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-barbershop-gold text-center">AFTER</h3>
+              <div className="space-y-2 md:space-y-4">
+                <h3 className="text-lg md:text-xl font-semibold text-barbershop-gold text-center">AFTER</h3>
                 <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
                   <img
                     src={currentPhoto.after}
                     alt="After haircut"
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute top-2 md:top-4 left-2 md:left-4 bg-green-600 text-white px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-semibold">
                     AFTER
                   </div>
                 </div>
