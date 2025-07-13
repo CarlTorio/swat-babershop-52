@@ -1,4 +1,3 @@
-
 import { format } from 'date-fns';
 import { User, Scissors, Calendar, Clock, DollarSign } from 'lucide-react';
 import { BookingData } from '../BookingDialog';
@@ -53,7 +52,7 @@ const BookingConfirmation = ({ bookingData }: BookingConfirmationProps) => {
                 <div className="flex items-center space-x-2">
                   <DollarSign className="h-4 w-4 text-barbershop-gold" />
                   <span className="text-barbershop-gold font-bold">
-                    ${bookingData.service?.price}
+                    ₱{bookingData.service?.price}
                   </span>
                 </div>
                 <div className="flex items-center space-x-2 mt-1">
@@ -88,7 +87,7 @@ const BookingConfirmation = ({ bookingData }: BookingConfirmationProps) => {
         <div className="flex justify-between items-center">
           <span className="text-white">Total Amount:</span>
           <span className="text-barbershop-gold font-bold text-xl">
-            ${bookingData.service?.price}
+            ₱{bookingData.service?.price}
           </span>
         </div>
         <p className="text-gray-400 text-sm mt-2">
