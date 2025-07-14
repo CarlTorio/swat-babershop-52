@@ -92,9 +92,9 @@ const About = () => {
               imageCollages.map((imagePair, index) => (
                 <CarouselItem key={index} className="h-full">
                   <div className="relative w-full h-full min-h-[500px] sm:min-h-[600px] lg:min-h-[700px]">
-                    <div className="grid grid-cols-2 h-full gap-1">
+                    <div className="grid grid-cols-2 h-full gap-0">
                       {imagePair.map((image, imgIndex) => (
-                        <div key={imgIndex} className="relative h-full">
+                        <div key={imgIndex} className="relative h-full w-full">
                           <img 
                             src={image.src} 
                             alt={image.alt} 
