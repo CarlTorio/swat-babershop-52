@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { MapPin, Phone, Clock, Mail, Calendar } from 'lucide-react';
+import { MapPin, Phone, Clock, Mail, Calendar, Facebook } from 'lucide-react';
 import BookingDialog from './BookingDialog';
 
 const Contact = () => {
@@ -21,6 +21,23 @@ const Contact = () => {
   return (
     <>
       <section id="contact" className="bg-barbershop-charcoal">
+        {/* Facebook Section */}
+        <div className="w-full bg-barbershop-black/50 border-b border-barbershop-gold/20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div className="text-center">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61566710077999" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 bg-barbershop-gold/10 hover:bg-barbershop-gold/20 text-barbershop-gold border border-barbershop-gold/30 hover:border-barbershop-gold/50 px-4 py-2 rounded-lg transition-all duration-300 group"
+              >
+                <Facebook className="h-4 w-4 group-hover:scale-110 transition-transform" />
+                <span className="text-sm font-medium">Follow us on Facebook</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center mb-6">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
