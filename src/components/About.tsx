@@ -62,7 +62,7 @@ const About = () => {
     imageCollages.push(galleryImages.slice(i, i + 2));
   }
 
-  return <section id="about" className="relative py-16 overflow-hidden">
+  return <section id="about" className="relative overflow-hidden">
       {/* Background Gallery Carousel - Full Section */}
       <div className="absolute inset-0 z-0">
         <Carousel plugins={[Autoplay({
@@ -77,7 +77,7 @@ const About = () => {
               // Mobile: Single image per slide
               galleryImages.map((image, index) => (
                 <CarouselItem key={index} className="h-full">
-                  <div className="relative w-full h-full min-h-[500px] sm:min-h-[600px] lg:min-h-[700px]">
+                  <div className="relative w-full h-screen">
                     <img 
                       src={image.src} 
                       alt={image.alt} 
@@ -91,7 +91,7 @@ const About = () => {
               // Desktop: Collage with 2 images per slide
               imageCollages.map((imagePair, index) => (
                 <CarouselItem key={index} className="h-full">
-                  <div className="relative w-full h-full min-h-[500px] sm:min-h-[600px] lg:min-h-[700px]">
+                  <div className="relative w-full h-screen">
                     <div className="grid grid-cols-2 h-full gap-0">
                       {imagePair.map((image, imgIndex) => (
                         <div key={imgIndex} className="relative h-full w-full">
@@ -113,7 +113,7 @@ const About = () => {
       </div>
 
       {/* Content Overlay */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-between min-h-[500px] sm:min-h-[600px] lg:min-h-[700px]">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-screen flex flex-col justify-between">
         {/* Open Gallery Button - Top */}
         <div className="pt-8 text-center">
           <Link to="/gallery">
