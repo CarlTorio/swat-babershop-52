@@ -1,7 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 import { Button } from '@/components/ui/button';
-import { Award, Users, Clock, Star, Images } from 'lucide-react';
+import { Award, Users, Clock, Star, Images, Facebook } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
@@ -134,6 +134,19 @@ const About = () => {
                   <p className="text-gray-300 text-xs">
                     We're more than just a barbershop – we're a destination for the modern gentleman.
                   </p>
+                  
+                  {/* Facebook Button */}
+                  <div className="mt-4 text-center">
+                    <a 
+                      href="https://www.facebook.com/profile.php?id=61566710077999" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-2 bg-barbershop-gold/10 hover:bg-barbershop-gold/20 text-barbershop-gold border border-barbershop-gold/30 hover:border-barbershop-gold/50 px-4 py-2 rounded-lg transition-all duration-300 group"
+                    >
+                      <Facebook className="h-4 w-4 group-hover:scale-110 transition-transform" />
+                      <span className="text-sm font-medium">Follow us on Facebook</span>
+                    </a>
+                  </div>
                 </div>
               </CardContent>
             </Card>
